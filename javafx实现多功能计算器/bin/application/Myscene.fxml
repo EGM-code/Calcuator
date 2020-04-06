@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MysceneController">
+   <children>
+      <Button layoutX="20.0" layoutY="3.0" mnemonicParsing="false" text="查看(V)" textAlignment="JUSTIFY" />
+      <Button layoutX="95.0" layoutY="3.0" mnemonicParsing="false" text="编辑(E)" />
+      <Button layoutX="174.0" layoutY="3.0" mnemonicParsing="false" text="帮助(H)" />
+      <TextArea layoutX="20.0" layoutY="273.0" prefHeight="270.0" prefWidth="220.0" />
+      <Button layoutX="20.0" layoutY="276.0" minHeight="55.0" mnemonicParsing="false" onAction="#eventButton_CE" text="CE">
+         <font>
+            <Font size="22.0" />
+         </font></Button>
+      <Button layoutX="75.0" layoutY="276.0" minHeight="55.0" mnemonicParsing="false" onAction="#eventButton_C" text="C">
+         <font>
+            <Font size="27.0" />
+         </font></Button>
+      <Button layoutX="131.0" layoutY="276.0" minHeight="55.0" mnemonicParsing="false" onAction="#eventButton" text="\%">
+         <font>
+            <Font size="24.0" />
+         </font></Button>
+      <Button layoutX="185.0" layoutY="438.0" minHeight="55.0" mnemonicParsing="false" onAction="#Add_eventButton" text="+">
+         <font>
+            <Font size="26.0" />
+         </font></Button>
+      <Button layoutX="130.0" layoutY="331.0" minHeight="55.0" mnemonicParsing="false" onAction="#Ninth_eventButton" prefWidth="55.0" text="9">
+         <font>
+            <Font size="25.0" />
+         </font></Button>
+      <Button layoutX="171.0" layoutY="494.0" minHeight="30.0" mnemonicParsing="false" onAction="#EQ_eventButton" prefWidth="66.0" text="= ">
+         <font>
+            <Font size="24.0" />
+         </font></Button>
+      <Button layoutX="109.0" layoutY="493.0" minHeight="28.0" mnemonicParsing="false" onAction="#point_eventButton" prefWidth="60.0" text=".">
+         <font>
+            <Font size="25.0" />
+         </font></Button>
+      <Button layoutX="22.0" layoutY="494.0" minHeight="30.0" mnemonicParsing="false" onAction="#Zero_eventButton" prefWidth="85.0" text="0">
+         <font>
+            <Font size="24.0" />
+         </font></Button>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+      <TextField layoutX="20.0" layoutY="197.0" prefHeight="20.0" prefWidth="224.0" text="计数= " />
+      <Text layoutX="328.0" layoutY="234.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+      <Text layoutX="64.0" layoutY="213.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+      <TextField fx:id="text" layoutX="20.0" layoutY="220.0" prefHeight="50.0" prefWidth="224.0" promptText="                                                     " />
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+      <Button layoutX="21.0" layoutY="385.0" minHeight="55.0" mnemonicParsing="false" onAction="#Fourth_eventButton" prefWidth="55.0" text="4">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Button>
+      <Button layoutX="130.0" layoutY="438.0" minHeight="55.0" mnemonicParsing="false" onAction="#Three_eventButton" prefWidth="55.0" text="3">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Button>
+      <Button layoutX="21.0" layoutY="438.0" minHeight="55.0" mnemonicParsing="false" onAction="#One_eventButton" prefWidth="55.0" text="1">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Button>
+      <Button layoutX="75.0" layoutY="438.0" minHeight="55.0" mnemonicParsing="false" onAction="#Two_eventButton" prefWidth="55.0" text="2">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Button>
+      <Button layoutX="130.0" layoutY="385.0" minHeight="55.0" mnemonicParsing="false" onAction="#Sixth_eventButton" prefWidth="55.0" text="6">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Button>
+      <Button layoutX="75.0" layoutY="385.0" minHeight="55.0" mnemonicParsing="false" onAction="#Fiveth_eventButton" prefWidth="55.0" text="5">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Button>
+      <Button layoutX="75.0" layoutY="331.0" minHeight="55.0" mnemonicParsing="false" onAction="#Eigth_eventButton" prefWidth="55.0" text="8">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Button>
+      <Button layoutX="21.0" layoutY="331.0" minHeight="55.0" mnemonicParsing="false" onAction="#Seventh_eventButton" prefWidth="55.0" text="7">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Button>
+      <Button layoutX="184.0" layoutY="331.0" minHeight="55.0" mnemonicParsing="false" onAction="#Mul_eventButton" text="×">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Button>
+      <Button layoutX="185.0" layoutY="386.0" minHeight="55.0" mnemonicParsing="false" onAction="#Sub_eventButton" prefWidth="55.0" text="-">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Button>
+      <Button layoutX="184.0" layoutY="276.0" minHeight="55.0" mnemonicParsing="false" onAction="#Div_eventButton" text="÷">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Button>
+      <AnchorPane layoutX="268.0" layoutY="66.0" prefHeight="530.0" prefWidth="526.0">
+         <children>
+            <MenuButton layoutY="3.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="526.0" text="计算两个日期之差">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Action 1" />
+                <MenuItem mnemonicParsing="false" text="Action 2" />
+              </items>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </MenuButton>
+            <Text layoutX="36.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="从">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <Text layoutX="277.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="到">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <TextField fx:id="text4" layoutY="115.0" prefHeight="40.0" prefWidth="526.0" />
+            <TextField fx:id="text5" layoutY="197.0" prefHeight="35.0" prefWidth="526.0" />
+            <Button layoutX="398.0" layoutY="265.0" mnemonicParsing="false" onAction="#Cal_event" prefWidth="85.0" text="计算">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Text layoutX="6.0" layoutY="106.0" strokeType="OUTSIDE" strokeWidth="0.0" text="差（年，月，周，天）">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Text>
+            <Text layoutX="6.0" layoutY="188.0" strokeType="OUTSIDE" strokeWidth="0.0" text="差（天）">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Text>
+            <DatePicker fx:id="date1" layoutX="77.0" layoutY="44.0" />
+            <DatePicker fx:id="date2" layoutX="313.0" layoutY="43.0" />
+         </children>
+      </AnchorPane>
+      <TextField editable="false" layoutX="250.0" layoutY="7.0" prefHeight="35.0" prefWidth="526.0" text="选择所需的日期计算">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </TextField>
+      <ComboBox layoutX="18.0" layoutY="26.0" prefHeight="30.0" prefWidth="224.0" style="-fx-background-color: #ffffff;">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </ComboBox>
+      <TextField layoutX="19.0" layoutY="56.0" prefHeight="140.0" prefWidth="224.0" />
+   </children>
+</AnchorPane>
